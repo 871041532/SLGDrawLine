@@ -8,7 +8,7 @@ public class SetPropies : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        //GameObject line =GameObject.Instantiate(Resources.Load("DrawLine/Line") as GameObject);
 	}
 	
 	// Update is called once per frame
@@ -25,20 +25,12 @@ public class SetPropies : MonoBehaviour {
         }
         mesh.colors = colors;
 
-        //法线是Y轴拉长
-        var normals = new Vector3[vertices.Length];
-        for (int i = 0; i < normals.Length; i++)
+        //Y轴缩放，速度值
+        var uv2 = new Vector2[vertices.Length];
+        for (int i = 0; i < uv2.Length; i++)
         {
-            normals[i] = new Vector3(1.0f/transform.localScale.y, 0, 0);
+            uv2[i] = new Vector2(transform.localScale.y, m_speed);
         }
-        mesh.normals = normals;
-
-        //切线是速度
-        var tangents = new Vector4[vertices.Length];
-        for (int i = 0; i < tangents.Length; i++)
-        {
-            tangents[i] = new Vector4(1.0f/m_speed,0,0,0);
-        }
-        mesh.tangents = tangents;
+        mesh.uv2 = uv2;
 	}
 }
