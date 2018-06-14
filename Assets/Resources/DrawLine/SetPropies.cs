@@ -29,7 +29,7 @@ public class SetPropies : MonoBehaviour {
         var uv2 = new Vector2[vertices.Length];
         for (int i = 0; i < uv2.Length; i++)
         {
-            uv2[i] = new Vector2(transform.localScale.y, m_speed);
+            uv2[i] = new Vector2(transform.localScale.y / transform.localScale.x, m_speed);
         }
         mesh.uv2 = uv2;
 	}
