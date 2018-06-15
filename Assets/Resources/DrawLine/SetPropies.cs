@@ -6,13 +6,8 @@ public class SetPropies : MonoBehaviour {
     public Color m_color = new Color(1, 1, 1, 1);
     public float m_speed = 1.0f;
 
-	// Use this for initialization
-	void Start () {
-        //GameObject line =GameObject.Instantiate(Resources.Load("DrawLine/Line") as GameObject);
-	}
-	
-	// Update is called once per frame
-	void Update () {
+#if false
+    void Update () {
         Transform transform = GetComponent<Transform>();
         Mesh mesh = GetComponent<MeshFilter>().mesh;
 
@@ -33,4 +28,5 @@ public class SetPropies : MonoBehaviour {
         }
         mesh.uv2 = uv2;
 	}
+#endif
 }

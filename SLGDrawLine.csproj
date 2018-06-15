@@ -237,8 +237,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Resources\DrawLine\LineMgr.cs" />
+    <Compile Include="Assets\Resources\DrawLine\LineManager.cs" />
     <Compile Include="Assets\Resources\DrawLine\SetPropies.cs" />
+    <Compile Include="Assets\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\DrawLine\lineShader.shader" />
