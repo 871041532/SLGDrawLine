@@ -11,4 +11,4 @@ SLG手游画行军线
 2.回收线：LineManager.Instance.BackLine(int handle);
 
 效果：
-![img]https://github.com/871041532/SLGDrawLine/blob/master/Assets/%E6%95%88%E6%9E%9C.gif
+![image]https://github.com/871041532/SLGDrawLine/blob/master/Assets/%E6%95%88%E6%9E%9C.gif
